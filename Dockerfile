@@ -16,7 +16,7 @@ RUN npm run build
 # COLOCAR O APP NO NGINX SERVER
 FROM nginx:latest
 
-# COPIAR E COLOCAR O APP NO NGINX LEMBRAR DE MUDAR O BUILD AQUI, TENDO O NOME DA APLICAÇÃO
+# COPIAR E COLOCAR O APP NO NGINX LEMBRAR DE MUDAR O BUILD AQUI, TENDO O NOME DA
 COPY --from=build /usr/local/app/dist/poc-nginx-esdras/browser /usr/share/nginx/html
 
 
